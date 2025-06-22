@@ -1,0 +1,37 @@
+package number;
+
+public class ArmstrongRange {
+	public static void main(String[] args) {
+		int start = 100, end = 9999;
+		System.out.println("Armstrong numbers between " + start + " and " + end + ":");
+		for (int num = start; num <= end; num++) {
+			if(armstrong(num))
+				System.out.println(num +" arm");
+		}
+			
+			
+	}
+		
+		public static boolean armstrong(int num) {
+			int original = num, result = 0,num2=num,count=0;
+		        
+		        while(num2>0) {
+		        	count++;
+		        	num2/=10;
+		        }
+		        
+		        while (num > 0) {
+		            int digit = num % 10;
+		            int power=1;
+		            for(int i=1;i<=count;i++) {
+		            	power=power*digit;
+		            }
+		            result += power;
+		            num /= 10;
+		        }
+		        if (result == original)
+		           return true;
+		        
+		        return false;
+		}
+}

@@ -1,0 +1,18 @@
+package number;
+
+public class ArmstrongRange {
+	public static void main(String[] args) {
+		int start = 100, end = 999;
+		System.out.println("Armstrong numbers between " + start + " and " + end + ":");
+		for (int num = start; num <= end; num++) {
+			int temp = num, sum = 0;
+			while (temp > 0) {
+				int digit = temp % 10;
+				sum += digit * digit * digit;
+				temp /= 10;
+			}
+			if (sum == num)
+				System.out.println(num);
+		}
+	}
+}

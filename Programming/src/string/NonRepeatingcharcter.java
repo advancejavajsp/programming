@@ -1,0 +1,23 @@
+package string;
+
+public class NonRepeatingcharcter {
+	public static void main(String[] args) {
+		String s1 = "hello world";
+		int[] a = new int[256];
+
+		for (int i = 0; i < s1.length(); i++) {
+			char c = s1.charAt(i);
+			if (c != ' ')
+				a[c]++;
+		}
+
+		// Non repeating charcter
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] == 1) {
+				System.out.print((char) i + " ");
+				System.out.println(a[i]);
+			}
+		}
+
+	}
+}

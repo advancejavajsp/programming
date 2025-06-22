@@ -1,0 +1,27 @@
+package string;
+
+public class ReverseEachWord {
+    public static void main(String[] args) {
+        String str = "Hello World Java";
+        str = str + " "; // To capture the last word
+
+        String word = "", result = "";
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch != ' ') {
+                word += ch;
+            } else {
+                // Reverse the word manually
+                String rev = "";
+                for (int j = word.length() - 1; j >= 0; j--) {
+                    rev += word.charAt(j);
+                }
+                result += rev + " ";
+                word = ""; // reset
+            }
+        }
+
+        System.out.println("Reversed each word: " + result.trim());
+    }
+}
+

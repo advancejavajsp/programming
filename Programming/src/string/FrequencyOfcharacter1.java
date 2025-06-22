@@ -1,0 +1,25 @@
+package string;
+
+public class FrequencyOfcharacter1 {
+
+	public static void main(String[] args) {
+		String s1="hello world";
+		int[] a=new int[256];
+		
+		for(int i=0;i<s1.length();i++) {
+			char c=s1.charAt(i);
+			if(c!=' ')
+			a[c]++;
+		}
+		//frequency of character
+		for(int i=0;i<a.length;i++) {
+			if(a[i]!=0 ) {
+				System.out.print((char)i +" ");
+				System.out.println(a[i]);
+			}
+		}
+		
+		
+		
+	}
+}

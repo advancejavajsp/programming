@@ -1,0 +1,36 @@
+package map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class WordFrequency {
+    public static void main(String[] args) {
+        String sentence = "Java is easy and Java is powerful";
+        String word = "";
+        Map<String, Integer> wordMap = new HashMap<>();
+
+        sentence = sentence + " "; // Add space to capture last word
+
+        for (int i = 0; i < sentence.length(); i++) {
+            char ch = sentence.charAt(i);
+
+            if (ch != ' ') {
+                word += ch;
+            } else if (!word.isEmpty()) {
+                // Update word frequency
+                if (wordMap.containsKey(word)) {
+                    wordMap.put(word, wordMap.get(word) + 1);
+                } else {
+                    wordMap.put(word, 1);
+                }
+                word = ""; // Reset for next word
+            }
+        }
+
+        // Print word frequencies
+        for (Map.Entry<String, Integer> entry : wordMap.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+}
+
