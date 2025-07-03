@@ -3,7 +3,7 @@ package number;
 public class NthFibnocciNumber {
 	
 	public static void main(String[] args) {
-        int  i = 0, k = 6;
+        int  i = 0, k = 3;
         int n1=0;
         int n2=1;
         System.out.print("Fibonacci Series: ");
