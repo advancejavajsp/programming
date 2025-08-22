@@ -4,7 +4,8 @@ public class SecondMax {
     public static void main(String[] args) {
         int[] arr = {4, -9, 2, 15, -17};
         int max = arr[0], second = Integer.MIN_VALUE;
-        for (int num : arr) {
+        for (int i=0;i<arr.length;i++) {
+        	int num=arr[i];
             if (num > max) {
                 second = max;
                 max = num;

@@ -1,0 +1,30 @@
+pattertest1
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+patterntest2
+A 
+A B 
+A B C 
+A B C D 
+A B C D E
+patterntest3
+patterntest4
+patterntest5
+patterntest6
+patterntest7
+patterntest8
+patterntest9
+patterntest10
+patterntest11
+patterntest12
+patterntest13
+patterntest14
+patterntest15
+patterntest16
+patterntest17
+patterntest18
+patterntest19
+patterntest20

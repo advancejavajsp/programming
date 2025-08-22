@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Move012 {
 
 	public static void main(String[] args) {
-		int[] a= {2,0,1,2,1,2,1,1,2,2};
+		int[] a= {2,0,1,2,1,0,1,1,2,2};
 		int low=0;
 		int mid =0;
 		int high=a.length-1;
